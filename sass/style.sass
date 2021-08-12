@@ -1,0 +1,30 @@
+.modal
+	opacity: 0
+	display: flex
+	height: 0px
+	margin-top: 10000px
+	z-index: 202
+	transition: opacity  0.25s
+	-webkit-transition: opacity 0.25s
+	-moz-transition: opacity 0.25s
+	-o-transition: opacity 0.25s
+	
+	.modal-card-head
+		cursor: move
+		
+	.modal-card
+		position: absolute
+		
+	.modal-background
+		background-color: rgba(10, 10, 10, 0.4)
+	
+	.background-light
+		background-color: rgba(10, 10, 10, 0.1)
+
+	&.is-active
+		opacity: 1
+		height: auto
+		margin-top: 0px
+		
+		&.is-transparent
+			opacity: 0
